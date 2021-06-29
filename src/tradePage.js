@@ -8,7 +8,6 @@ function tradePage() {
       <div className={styles.sideBar}></div>
       <div className={styles.desktopHeader}></div>
       <div className={styles.mainContainer}>
-        <div className={styles.tableContainer}>
           <table className={styles.assetTable}>
             <thead>
               <tr className={styles.searchBar}></tr>
@@ -59,9 +58,11 @@ function tradePage() {
                         </div>
                       </span>
                     </th>
-                    <th className={styles.assetPrice}></th>
-                    <th className={styles.assetChange}></th>
-                    <th className={styles.assetMarketcap}></th>
+                    <th className={styles.assetPrice}>{currency.price}</th>
+                    <th className={styles.assetChange}>{currency.change}</th>
+                    <th className={styles.assetMarketcap}>
+                      {currency.marketCap}
+                    </th>
                     <th className={styles.assetBuy}>
                       <button className={styles.buyButton}>Buy</button>
                     </th>
@@ -100,7 +101,6 @@ function tradePage() {
               })}
             </tbody>
           </table>
-        </div>
       </div>
     </>
   );

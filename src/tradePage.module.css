@@ -5,15 +5,15 @@
 
 .sideBar {
   width: 228px;
-  height: 100vh;
+  height: 150vh;
   background: powderblue;
   position: absolute;
   left: 0;
   z-index: 2;
 }
 
-.maiContainer {
-  background-color: lightgray;
+.mainContainer {
+  background-color: #fcfcfe;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -28,9 +28,12 @@
 }
 
 .assetTable {
-  background: white;
-  width: 100%;
   border-spacing: 0 1px;
+  width: 1044px;
+  position: relative;
+  left: 277px;
+  top: 27px;
+  background: white;
 }
 
 .searchBar {
@@ -39,15 +42,6 @@
   background: #ffff;
   position: relative;
   top: 0;
-}
-
-.tableContainer {
-  width: 1044px;
-  position: relative;
-  left: 277px;
-  top: 27px;
-  background: white;
-  height: 100vh;
 }
 
 thead {
@@ -106,9 +100,14 @@ tr {
 }
 
 .assetItem {
-  background: pink;
-  width: 100%;
-  height: 70px;
+  background: white;
+  height: 72px;
+}
+
+.assetItem:hover {
+  background: #F0F3F5;
+  cursor: pointer;
+  animation: 0.5s ease 0s 1;
 }
 
 .assetImage {
@@ -141,8 +140,9 @@ th {
   font-size: 14px;
   border: 1px solid rgb(22, 82, 240);
   background-color: rgb(22, 82, 240);
-  top: 15px;
-  left: 6px;
+  top: 17px;
+  left: 41px;
+  font-weight: bolder;
 }
 
 .starIcon {
@@ -155,9 +155,49 @@ th {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 20px 0 0 30px;
-  line-height: 1.3;
+  padding: 16px 0 0 31px;
+  line-height: 1.5;
   color: rgb(5, 15, 25);
   font-size: 16px;
   font-weight: 400;
+}
+
+.assetTitle {
+  padding-left: 17px;
+}
+
+.assetSubtitle {
+  text-align: left;
+  padding-left: 17px;
+  line-height: 1.3;
+  color: #5b616e;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.assetImage {
+  width: 33px;
+  height: 33px;
+}
+
+.assetPrice {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.assetMarketcap {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left:25px;
+  position: relative;
+}
+
+.assetChange {
+  color: rgb(18, 133, 84);
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
 }
