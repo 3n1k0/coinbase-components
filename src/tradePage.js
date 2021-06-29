@@ -12,16 +12,39 @@ function tradePage() {
           <table className="asset-table">
             <thead>
               <tr>
-                <th class="header-name">Name</th>
-                <th class="header-label">Price</th>
-                <th class="header-label">Change</th>
-                <th class="header-label">Market cap</th>
-                <th class="header-label"></th>
-                <th class="header-label">Watch</th>
+                <th class="thead-name">Name</th>
+                <th>Price</th>
+                <th>Change</th>
+                <th class="thead-marketcap">Market cap</th>
+                <th></th>
+                <th>Watch</th>
               </tr>
             </thead>
             <tbody>
-              <tr class="asset-item"></tr>
+              <tr class="asset-item">
+                <th class="asset-image"></th>
+                <th class="asset-subtitle"></th>
+                <th class="asset-price"></th>
+                <th class="asset-change"></th>
+                <th class="asset-marketcap"></th>
+                <th class="asset-star"></th>
+              </tr>
+              <tr class="asset-item">
+                <th class="asset-image"></th>
+                <th class="asset-subtitle"></th>
+                <th class="asset-price"></th>
+                <th class="asset-change"></th>
+                <th class="asset-marketcap"></th>
+                <th class="asset-star"></th>
+              </tr>
+              <tr class="asset asset-item">
+                <th class="asset-image"></th>
+                <th class="asset-subtitle"></th>
+                <th class="asset-price"></th>
+                <th class="asset-change"></th>
+                <th class="asset-marketcap"></th>
+                <th class="asset-star"></th>
+              </tr>
             </tbody>
           </table>
         </div>

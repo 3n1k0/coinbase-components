@@ -27,13 +27,13 @@
 }
 
 .asset-table {
-  background: green;
+  background: white;
   height: 100%;
   width: 100%;
 }
 
 .search-bar {
-  height: 100px;
+  height: 97px;
   width: 100%;
   background: #ffff;
   position: relative;
@@ -55,9 +55,9 @@ table{
 
 thead {
   background: pink;
-  height: 55px;
+  height: 50px;
   position: relative;
-    padding: 16px 48px 16px 0px;
+  padding: 16px 48px 16px 0px;
   border-bottom: none;
   cursor: pointer;
   text-align: left;
@@ -72,6 +72,18 @@ tr {
   height: 50px;
 }
 
-.header-name{
+.thead-name{
 width: 356px;
+}
+
+.thead-marketcap{
+  text-align: right;
+}
+
+.asset-item{
+  background: blue;
+  width: 100%;
+}
+.asset {
+  max-height: 50px;
 }
