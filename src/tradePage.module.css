@@ -111,9 +111,9 @@ tr {
   height: 70px;
 }
 
-.assetBuy {
-  display: grid;
-  place-items: center;
+.assetImage {
+  width: 35px;
+  height: 35px;
 }
 
 th {
@@ -121,8 +121,17 @@ th {
   font-size: 14.5px;
 }
 
-.buyButton {
+.assetBuy {
+  padding: 14px 16px 14px 0px;
+  line-height: 1.3;
+  color: rgb(5, 15, 25);
+  font-size: 16px;
+  font-weight: 400;
   position: relative;
+}
+
+.buyButton {
+  position: absolute;
   width: 80px;
   border-radius: 4px;
   color: rgb(255, 255, 255);
@@ -140,4 +149,15 @@ th {
   right: 30px;
   position: relative;
   top: 4px;
+}
+
+.assetName {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 0 0 30px;
+  line-height: 1.3;
+  color: rgb(5, 15, 25);
+  font-size: 16px;
+  font-weight: 400;
 }

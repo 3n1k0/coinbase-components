@@ -48,9 +48,16 @@ function tradePage() {
                     key={currency.name}
                   >
                     <th className={styles.assetName}>
-                      <div className={styles.assetName}>{currency.name}</div>
-                      <div className={styles.assetSubtitle}></div>
-                      <div className={styles.assetImage}></div>
+                      <img
+                        className={styles.assetImage}
+                        src={currency.src}
+                      ></img>
+                      <span>
+                        <div className={styles.assetTitle}>{currency.name}</div>
+                        <div className={styles.assetSubtitle}>
+                          {currency.subtitle}
+                        </div>
+                      </span>
                     </th>
                     <th className={styles.assetPrice}></th>
                     <th className={styles.assetChange}></th>
@@ -91,7 +98,6 @@ function tradePage() {
                   </tr>
                 );
               })}
-              
             </tbody>
           </table>
         </div>
